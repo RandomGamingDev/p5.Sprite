@@ -8,7 +8,7 @@ class Sprite extends Animation {
     }
 
     animationFrame(stepProgress) {
-        this.sprite = this.sprites[(this.sprites.length - 1) * stepProgress];
+        this.sprite = this.sprites[Math.floor((this.sprites.length - 1) * stepProgress)];
         console.log(this.sprite);
         image(this.atlas,
               this.pos[0], this.pos[1], this.size[0], this.size[1],
