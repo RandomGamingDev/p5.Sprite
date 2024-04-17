@@ -1,5 +1,5 @@
 class Sprite extends Animation {
-    constructor(atlas, sprites, pos, size, speed, disp = _renderer, playing = true, progress = 0, step = 0) {
+    constructor(atlas, sprites, pos, size, speed, disp = window, playing = true, progress = 0, step = 0) {
         super(disp, playing, progress, step, speed, true, false, disp.frameRate());
         this.atlas = atlas;
         this.sprites = sprites;
